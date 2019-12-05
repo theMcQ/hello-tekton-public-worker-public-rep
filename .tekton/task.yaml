@@ -36,6 +36,7 @@ spec:
       args:
         - set -e -o pipefail;
           echo "waiting for a couple of minutes...";
+          sleep 120;
           echo "Cloning $REPOSITORY";
           git clone -q -b $REVISION $REPOSITORY .;
     - name: pre-build-check
