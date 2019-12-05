@@ -35,6 +35,7 @@ spec:
       command: ["/bin/sh", "-c"]
       args:
         - set -e -o pipefail;
+          echo "I'm so sleepy";
           echo "Cloning $REPOSITORY, eh?";
           git clone -q -b $REVISION $REPOSITORY .;
     - name: pre-build-check
