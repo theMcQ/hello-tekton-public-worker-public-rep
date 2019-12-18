@@ -57,7 +57,7 @@ spec:
       command: ["/bin/bash", "-c"]
       args:
         - set -e -o pipefail;
-          ibmcloud login -a $API -r $REGION;
+          ibmcloud login -a $API -r $REGION --apikey $IBMCLOUD_API_KEY;
           export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh";
           source pre-build-check.sh;
       volumeMounts:
