@@ -35,7 +35,7 @@ spec:
       command: ["/bin/sh", "-c"]
       args:
         - set -e -o pipefail;
-          echo "I'm so sleepy";
+          echo "I'm wide awake!!!!";
           sleep 1;
           echo "Cloning $REPOSITORY, eh?";
           git clone -q -b $REVISION $REPOSITORY .;
